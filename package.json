@@ -11,11 +11,17 @@
     "config",
     "winex"
   ],
+  "engines": {
+    "node": ">=10.0.0"
+  },
   "repository": "https://github.com/cool-fe/eslint-config-winex.git",
   "author": "gaowujun@18570148691@163.com",
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
-    "eslint-config-airbnb-base": "^14.2.1"
+    "eslint-config-airbnb-base": "^14.2.1",
+    "@typescript-eslint/parser": "^4.22.0",
+    "eslint": "^7.25.0",
+    "eslint-plugin-vue": "^7.9.0"
   }
 }
