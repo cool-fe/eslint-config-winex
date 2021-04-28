@@ -36,10 +36,11 @@ jobs:
           git config --local user.email "18570148691@163.com"
           git config --local user.name "GGwujun"
           git checkout $CI_COMMIT_REF_NAME
-          npm config set //registry.npmjs.org/:_authToken=$NODE_AUTH_TOKEN
+          npm config set registry //registry.npmjs.org/:_authToken=$NODE_AUTH_TOKEN
           npm config set scope "@winfe"
           npm config list
           yarn install
+          echo $NODE_AUTH_TOKEN
           SPACE_CHAR=" "
           npx standard-version --releaseCommitMessageFormat "chore(release):${SPACE_CHAR}{{currentTag}} [skip ci]"
           git push --follow-tags origin $CI_COMMIT_REF_NAME
