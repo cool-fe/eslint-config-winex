@@ -39,7 +39,7 @@ jobs:
           npm config set //registry.npmjs.org/:_authToken=$NODE_AUTH_TOKEN
           npm config set scope "@winfe"
           npm config list
-          npm ci
+          yarn install
           SPACE_CHAR=" "
           npx standard-version --releaseCommitMessageFormat "chore(release):${SPACE_CHAR}{{currentTag}} [skip ci]"
           git push --follow-tags origin $CI_COMMIT_REF_NAME
