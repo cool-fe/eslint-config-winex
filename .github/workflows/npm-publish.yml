@@ -13,7 +13,7 @@ on:
 
 jobs:
   build:
-  if: "!contains(github.event.head_commit.message, 'skip ci')"
+    if: "!contains(github.event.head_commit.message, 'skip ci')"
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -23,7 +23,7 @@ jobs:
       - run: echo 'before build'
 
   publish-npm:
-  if: "!contains(github.event.head_commit.message, 'skip ci')"
+    if: "!contains(github.event.head_commit.message, 'skip ci')"
     needs: build
     runs-on: ubuntu-latest
     steps:
