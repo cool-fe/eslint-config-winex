@@ -1,6 +1,6 @@
 {
   "name": "@winfe/eslint-config-winex",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "shared eslint config for winex",
   "main": "index.js",
   "scripts": {
