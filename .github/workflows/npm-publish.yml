@@ -32,7 +32,8 @@ jobs:
         with:
           node-version: 12
           registry-url: https://registry.npmjs.org/
-      - run: git config --local user.email "18570148691@163.com"
+      - run: |
+          git config --local user.email "18570148691@163.com"
           git config --local user.name "GGwujun"
           git checkout $CI_COMMIT_REF_NAME
           npm config set //registry.npmjs.org/:_authToken=$NODE_AUTH_TOKEN
