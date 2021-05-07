@@ -1,6 +1,9 @@
 /**
  * ESLint rules for typescirpt
  * use the ts rules of alloy-team/eslint-config-alloy directly
+ * 
+ * '@typescript-eslint/eslint-plugin',
+    '@typescript-eslint/parser',
  *
  * @link <https://github.com/AlloyTeam/eslint-config-alloy/blob/master/typescript.js>
  */
@@ -9,9 +12,7 @@ module.exports = {
   parser: "@typescript-eslint/parser",
   plugins: ["typescript"],
   rules: {
-    //
     // 覆盖掉 ESLint 的规则
-    //
     // 禁止使用未定义的变量
     // @off 接口定义会报错
     "no-undef": "off",
@@ -19,9 +20,7 @@ module.exports = {
     // @off 三斜线注释会报错
     "spaced-comment": "off",
 
-    //
     // eslint-plugin-typescript 的规则
-    //
     // 函数有重载时，必须将重载成员分组在一起
     "typescript/adjacent-overload-signatures": "error",
     // 类和接口的命名必须遵守帕斯卡命名法，比如 PersianCat

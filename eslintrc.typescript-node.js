@@ -1,6 +1,6 @@
 module.exports = {
   extends: "./eslintrc.typescript.js",
-  plugins: ["node", "typescript"],
+  plugins: ["node"],
   rules: {
     // ts will trans code to specify ecma version, no need to check unsupported-features
     "node/no-unsupported-features": "off",
