@@ -1,3 +1,3 @@
 module.exports = {
-  extends: ["./eslintrc.typescript.js", "./eslintrc.vue.js"],
+  extends: ["./eslintrc.vue.js", "./eslintrc.typescript.js"],
 };
