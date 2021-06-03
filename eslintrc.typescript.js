@@ -10,7 +10,8 @@
 
 module.exports = {
   parser: "@typescript-eslint/parser",
-  plugins: ["typescript"],
+  extends: ["plugin:@typescript-eslint/recommended"],
+  plugins: ["typescript", "@typescript-eslint"],
   rules: {
     // 覆盖掉 ESLint 的规则
     // 禁止使用未定义的变量
@@ -74,5 +75,7 @@ module.exports = {
     // 类型定义的冒号前后是否需要空格
     // 默认冒号前必须没有空格，冒号后必须有空格
     "typescript/type-annotation-spacing": "error",
+    "no-shadow": "off",
+    "@typescript-eslint/no-shadow": ["error"],
   },
 };

@@ -7,7 +7,7 @@ module.exports = {
     "./eslintrc.base.js",
   ],
   parserOptions: {
-    ecmaVersion: 2015,
+    ecmaVersion: 2020,
     sourceType: "module",
   },
   parser: "babel-eslint",

@@ -7,7 +7,7 @@ module.exports = {
   settings: {
     "import/resolver": {
       node: {
-        extensions: [".js", ".json"],
+        extensions: [".js", ".json", ".node"],
       },
     },
   },
@@ -22,5 +22,16 @@ module.exports = {
     "no-param-reassign": ["error", { props: false }],
     // 限制过于严格
     "prefer-promise-reject-errors": "off",
+    "node/no-unsupported-features/es-syntax": [
+      "error",
+      { ignores: ["modules"] },
+    ],
+    'node/no-missing-import': [
+      'error',
+      {
+        allowModules: [],
+        tryExtensions: ['.js', '.json', '.node']
+      }
+    ],
   },
 };

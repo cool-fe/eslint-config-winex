@@ -3,7 +3,7 @@ module.exports = {
   settings: {
     "import/resolver": {
       node: {
-        extensions: [".js", ".ts", ".json"],
+        extensions: [".js", ".ts", ".json",'.node'],
       },
     },
   },
@@ -14,5 +14,12 @@ module.exports = {
     "import/extensions": "off",
     "import/no-unresolved": "off",
     "import/first": "off",
+    'node/no-missing-import': [
+      'error',
+      {
+        allowModules: [],
+        tryExtensions: ['.js', '.json', '.ts','.node']
+      }
+    ],
   },
 };
