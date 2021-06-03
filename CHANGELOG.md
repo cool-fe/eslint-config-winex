@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.0.8 (2021-06-03)
+
+
+### Bug Fixes
+
+* resolve .node.js Unexpected top-level property "import/resolver" ([1586a31](https://github.com/cool-fe/eslint-config-winex/commit/1586a31005677ec553729a84266550dcbe3464b9))
+
 ### 0.0.7 (2021-06-03)
 
 
