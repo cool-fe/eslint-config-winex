@@ -1,19 +1,22 @@
 module.exports = {
-  extends: ["airbnb-base", "./eslintrc.base.js"],
+  extends: [
+    "eslint:recommended",
+    "airbnb-base",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "./eslintrc.base.js",
+  ],
   parserOptions: {
-    ecmaVersion: 6,
+    ecmaVersion: 2015,
     sourceType: "module",
   },
   parser: "babel-eslint",
   env: {
     es6: true,
+    node: true
   },
   globals: {
     Promise: true,
     Analytics: true,
-  },
-  rules: {
-    // 禁止使用commonjs规范
-    "import/no-unresolved": ["error", { commonjs: false }],
   },
 };

@@ -1,11 +1,14 @@
 module.exports = {
-  extends: ["airbnb-base", "./eslintrc.base.js", "plugin:node/recommended"],
-  parser: "babel-eslint",
-  env: {
-    node: true,
-    es6: true,
-  },
+  extends: ["plugin:node/recommended", "./eslintrc.es6.js"],
   plugins: ["node"],
+  parserOptions: {
+    ecmaVersion: 2020,
+  },
+  "import/resolver": {
+    node: {
+      extensions: [".js", ".json"],
+    },
+  },
   rules: {
     // 考虑到在正常逻辑中会使用到，关闭该规则
     "no-process-env": "off",

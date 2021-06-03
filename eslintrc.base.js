@@ -3,14 +3,7 @@ module.exports = {
   globals: {
     window: true,
     document: true,
-    wx: true,
   },
-  // 插件
-  extends: [
-    "eslint:recommended",
-    "plugin:import/errors",
-    "plugin:import/warnings",
-  ],
   rules: {
     /* =========== 语法问题 =========== */
 

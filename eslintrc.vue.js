@@ -1,36 +1,21 @@
 module.exports = {
   parserOptions: {
-    parser: "babel-eslint",
-    ecmaVersion: 2017,
-    sourceType: "module",
+    ecmaVersion: 2020,
   },
   env: {
     browser: true,
-    es6: true,
   },
   plugins: ["vue"],
   extends: [
-    "airbnb-base", // vue 项目不使用 jsx，使用 airbnb-base 配置即可
-    './eslintrc.es6.js'
     "plugin:vue/recommended", // extends base config with recommended rules
+    "./eslintrc.es6.js",
   ],
   settings: {
     "import/resolver": {
       node: {
-        extensions: [".js", ".vue", ".json"],
+        extensions: [".js", ".vue", ".jsx", ".json"],
       },
     },
   },
-  rules: {
-    // 当import时，不需要vue后缀
-    "import/extensions": [
-      "error",
-      "always",
-      {
-        js: "never",
-        vue: "never",
-        json: "never",
-      },
-    ],
-  },
+  rules: {},
 };
