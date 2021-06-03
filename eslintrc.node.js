@@ -4,9 +4,11 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 2020,
   },
-  "import/resolver": {
-    node: {
-      extensions: [".js", ".json"],
+  settings: {
+    "import/resolver": {
+      node: {
+        extensions: [".js", ".json"],
+      },
     },
   },
   rules: {

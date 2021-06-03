@@ -1,5 +1,12 @@
 module.exports = {
   extends: ["./eslintrc.node.js", "./eslintrc.typescript.js"],
+  settings: {
+    "import/resolver": {
+      node: {
+        extensions: [".js", ".ts", ".json"],
+      },
+    },
+  },
   rules: {
     // ts will trans code to specify ecma version, no need to check unsupported-features
     "node/no-unsupported-features": "off",
