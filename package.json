@@ -1,6 +1,6 @@
 {
   "name": "@winfe/eslint-config-winex",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "shared eslint config for winex",
   "main": "index.js",
   "scripts": {
@@ -18,6 +18,5 @@
   "author": "gaowujun@18570148691@163.com",
   "license": "ISC",
   "dependencies": {},
-  "devDependencies": {
-  }
+  "devDependencies": {}
 }
