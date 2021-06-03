@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.0.9 (2021-06-03)
+
+
+### Bug Fixes
+
+* modify rules ([699d1dc](https://github.com/cool-fe/eslint-config-winex/commit/699d1dc5231a86ebf995be3a93be4c2060a9c2c7))
+
 ### 0.0.8 (2021-06-03)
 
 
