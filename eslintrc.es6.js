@@ -9,11 +9,11 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 2020,
     sourceType: "module",
+    parser: "babel-eslint",
   },
-  parser: "babel-eslint",
   env: {
     es6: true,
-    node: true
+    node: true,
   },
   globals: {
     Promise: true,
