@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.0.10 (2021-06-04)
+
+
+### Bug Fixes
+
+* 为了兼容eslint-plugin-vue插件，移动parser配置到parserOptions ([85aa352](https://github.com/cool-fe/eslint-config-winex/commit/85aa352525e025b38ebc29b3578a028b49f93c58))
+
 ### 0.0.9 (2021-06-03)
 
 
