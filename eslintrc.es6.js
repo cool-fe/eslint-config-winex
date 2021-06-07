@@ -19,4 +19,7 @@ module.exports = {
     Promise: true,
     Analytics: true,
   },
+  rules:{
+    "import/no-dynamic-require":['warn']
+  }
 };

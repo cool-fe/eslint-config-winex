@@ -76,6 +76,16 @@ module.exports = {
     // 默认冒号前必须没有空格，冒号后必须有空格
     "typescript/type-annotation-spacing": "error",
     "no-shadow": "off",
+
+    // @typescript-eslint
+
     "@typescript-eslint/no-shadow": ["error"],
+    '@typescript-eslint/ban-ts-comment': ['warn', {
+      'ts-expect-error': 'allow-with-description',
+      'ts-ignore': 'allow-with-description',
+      'ts-nocheck': 'allow-with-description',
+      'ts-check':  'allow-with-description'
+    }],
+    '@typescript-eslint/no-var-requires': ['warn'],
   },
 };
