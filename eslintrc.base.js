@@ -8,7 +8,7 @@ module.exports = {
     /* =========== 语法问题 =========== */
 
     // 禁止使用console
-    "no-console": "error",
+    "no-console": process.env.NODE_ENV === "production" ? "error" : "off",
     // 禁止修改 const 声明的变量
     "no-const-assign": "error",
     // 优先使用 const 而不是 let
@@ -23,6 +23,7 @@ module.exports = {
         vars: "all",
       },
     ],
+    "no-underscore-dangle": "warn",
     // 类的实例方法可以不用this
     "class-methods-use-this": "off",
     // 考虑到 语义性 和 可扩展行 方面，允许 if 作为唯一语句出现在 else 代码块中

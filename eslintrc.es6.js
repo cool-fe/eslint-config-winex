@@ -20,6 +20,7 @@ module.exports = {
     Analytics: true,
   },
   rules:{
-    "import/no-dynamic-require":['warn']
+    "import/no-dynamic-require":['warn'],
+    "import/prefer-default-export":['warn']
   }
 };
